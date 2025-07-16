@@ -17,11 +17,6 @@ create table signup(
  );
 
 show tables;
-
-select * from signup;
-
-DROP TABLE IF EXISTS signuptwo;
-
 CREATE TABLE signuptwo(
   Formno VARCHAR(20),
   Religion VARCHAR(20),
@@ -34,8 +29,6 @@ CREATE TABLE signuptwo(
   Adhaar_Number VARCHAR(20),
   Pan_Number VARCHAR(20)
 );
-
-select * from signuptwo;
 
 create table login(
 Formno varchar(20),
@@ -50,5 +43,16 @@ create table signupthree(
   Pin_Num VARCHAR(20),
   Facility VARCHAR(100)
   );
-  
+
+create table bank(
+Pin_Num varchar(10),
+Date varchar(50),
+Type varchar(20),
+Amount varchar(20));
+
+select * from signup;
+select * from signuptwo;
 select * from signupthree;
+select * from bank;
+select * from login;
+
